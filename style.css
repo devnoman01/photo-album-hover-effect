@@ -11,12 +11,16 @@ body{
 .photo-frame{
     width: 220px;
     height: 220px;
-    
+    overflow: hidden;
     box-shadow: 0 5px 15px 0 gray;
     position: relative;
 }
 .photo-frame .photo img{
     width: 100%;
+}
+.photo-frame:hover .photo img{
+    transform: scale(1.2);
+    transition: transform 1s;
 }
 .photo-detail{
     position: absolute;
@@ -27,7 +31,7 @@ body{
 }
 .photo-frame:hover .photo-detail{
     display: block;
-    background-color: rgba(208, 237, 245, 0.8);
+    background-color: rgba(233, 241, 243, 0.7);
     box-shadow: 0 5px 15px 0 dimgray;
     animation: ease-in;
     padding-top: 35px;
