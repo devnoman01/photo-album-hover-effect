@@ -1,0 +1,39 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.headline{
+    padding: 20px 0;
+}
+.photo-album{
+    margin: 20px 10px;
+}
+.photo-frame{
+    width: 220px;
+    height: 220px;
+    
+    box-shadow: 0 5px 15px 0 gray;
+    position: relative;
+}
+.photo-frame .photo img{
+    width: 100%;
+}
+.photo-detail{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    top: 0;
+    display: none;
+}
+.photo-frame:hover .photo-detail{
+    display: block;
+    background-color: rgba(208, 237, 245, 0.8);
+    box-shadow: 0 5px 15px 0 dimgray;
+    animation: ease-in;
+    padding-top: 35px;
+    text-align: center;
+}
+.bold-name{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
